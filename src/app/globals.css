@@ -2,32 +2,147 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+li{
+  cursor: pointer;
+}
+li:hover{
+  color: rgb(212, 212, 212);
+  border-bottom: black 1px solid;
+  transition: all 0.25s;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.header{
+  animation: header normal 2s;
+  background: linear-gradient(to left , rgb(77, 77, 252) , rgb(29, 29, 97));
+  border-bottom: solid 10px black;
+}
+@keyframes header {
+  from{
+    opacity: 0;
+    height: 0;
+  }
+  to{
+    opacity: 1;
+    height:20rem;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.paragraf{
+  line-height: 27px;
+  font-size: 16px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.mn{
+  border-top: solid 2px white;
+}
+
+.explain{
+  background-color: rgba(1, 34, 167, 0.497);
+  backdrop-filter: blur(15px);
+  padding: 20px 30px;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.con-img{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.image:hover{
+  transform: scale(1.12);
+  transition: all 0.5s;
+}
+
+.con-destination{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border: solid 2px rgb(255, 255, 255);
+  cursor: pointer;
+  overflow: hidden;
+  color: white;
+}
+
+
+.img-contact:hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition: all 0.5s;
+  transform: scale(1.07);
+  cursor: pointer;
+}
+
+.img-view{
+  animation: img both 1s;
+  transition: all 0.5s;
+  height: 17rem;
+}
+@keyframes img{
+  from{
+    opacity: 0.25;
   }
+  to{
+    opacity: 1;
+  }
+}
+
+.banner{
+  background: linear-gradient(to right , black , rgb(2, 2, 140) , rgb(41, 31, 86));
+}
+
+.realcon{
+  background: linear-gradient(to right , black , rgb(2, 2, 140) , rgb(41, 31, 86));
+}
+
+.meno{
+  animation: meno normal 1s;
+  background-color: rgba(65, 65, 65, 0.482);
+  backdrop-filter: blur(15px);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+@keyframes meno {
+  from{
+    opacity: 0.25;
+    transform: translateX(-50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.titr{
+  animation: titr normal 1s;
+  background-color: rgba(80, 80, 80, 0.482);
+  backdrop-filter: blur(15px);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+@keyframes titr {
+  from{
+    opacity: 0.25;
+    transform: translateY(-20px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.destination{
+  animation: destination normal 1s;
+  background-color: rgba(80, 80, 80, 0.482);
+  backdrop-filter: blur(15px);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+@keyframes destination {
+  from{
+    opacity: 0.25;
+    transform: translateX(-30px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.container-home{
+  background: linear-gradient(to top, rgba(42, 42, 42, 0.504) , rgba(148, 148, 148, 0.564));
 }
