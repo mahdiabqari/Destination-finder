@@ -34,7 +34,7 @@ export default function Home() {
           
           <div className="explain w-[60%] text-white">
             <div className="title text-3xl font-bold mb-5">
-              Greate Weather Contries
+              Greate Weathers
             </div>
             <div className="paragraf">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum doloribus cupiditate tempora dolor delectus tempore rem facere officiis a possimus, asperiores fuga similique inventore quasi repudiandae maxime, aut veniam beatae.
