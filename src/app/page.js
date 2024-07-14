@@ -18,7 +18,7 @@ export default function Home() {
           <div className="flex flex-col items-center">
               <ul className="container-home flex justify-center items-center gap-10 text-white w-[50%] py-4 rounded-b-xl">
                   <Link href='/Rainy'><li className="border-b-[1px] border-b-blue-500">Rainy</li></Link>
-                  <Link href='/Snow'><li className="border-b-[1px] border-b-blue-500">Sknow</li></Link>
+                  <Link href='/Snow'><li className="border-b-[1px] border-b-blue-500"><Snowy></Snowy></li></Link>
                   <Link href='/Cold'><li className="border-b-[1px] border-b-blue-500">Cold</li></Link>
               </ul>
               <div className="title flex flex-col justify-center items-center mt-[3rem] text-[80px] text-white">
